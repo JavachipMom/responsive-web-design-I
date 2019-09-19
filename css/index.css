@@ -131,7 +131,9 @@ nav a {
 }
 
 .main_image {
-	width: 50%;
+    width: 50%;
+    height: 50%;
+    margin-top: 7%;
 }
 
 .section {
@@ -265,6 +267,9 @@ footer p{
    .logo {
        margin-bottom: 5%;
    }
+   .main_title, p {
+       margin: 0;
+   }
    .main_image {
        display: none;
    }
@@ -275,4 +280,28 @@ footer p{
    .main_title {
        margin-top: 0%;
    }
+}
+
+/* Now doing the Responsive design for the mobile view */
+
+@media (max-width: 500px) {
+    nav {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+    }
+    nav a {
+        text-align: center;
+        padding: 2%;
+        width: 115%;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+    }
+    .services {
+        border-top-style: solid;
+        border-top-width: thin;
+    }
+    .logo {
+        margin-bottom: 2%;
+    }
 }

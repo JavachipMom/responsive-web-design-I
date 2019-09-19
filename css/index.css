@@ -256,6 +256,9 @@ footer p{
 
 
 @media (max-width: 800px) {
+    .container {
+        width: auto;
+    }
     header {
        display: flex;
        flex-direction: column-reverse;
@@ -270,6 +273,9 @@ footer p{
    .main_title, p {
        margin: 0;
    }
+   .main_title h1 {
+    width: 65%;
+   }
    .main_image {
        display: none;
    }
@@ -280,11 +286,17 @@ footer p{
    .main_title {
        margin-top: 0%;
    }
+   .middle-img {
+       width: 100%;
+   }
 }
 
 /* Now doing the Responsive design for the mobile view */
 
 @media (max-width: 500px) {
+    .container {
+        width: auto;
+    }
     nav {
         display: flex;
         margin: 0;
